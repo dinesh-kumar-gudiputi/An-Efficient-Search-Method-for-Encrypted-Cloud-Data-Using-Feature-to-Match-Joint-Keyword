@@ -34,5 +34,5 @@ Python 3.x
 Additional dependencies listed in requirements.txt
 
 ## Contributors
-Dinesh Kumar
+Dinesh Kumar,
 Naga Lakshmi
