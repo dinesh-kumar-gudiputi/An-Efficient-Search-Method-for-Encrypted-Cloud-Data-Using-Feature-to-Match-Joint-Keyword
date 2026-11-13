@@ -1,38 +1,33 @@
-# Project Title: An Efficient Search Method Using Features to Match Joint Keywords on Encrypted Cloud Data
+# Efficient Search on Encrypted Cloud Data Using Joint Keywords (FMJK)
 
+B.Tech final-year team project (2023 to 2024): a web application where data owners upload encrypted documents to the cloud and data users search them by keyword, based on the paper "An efficient search method using features to match joint keywords on encrypted cloud data".
 
-## Overview
-This project implements an efficient search method to retrieve encrypted cloud data based on joint keywords. The primary aim is to provide a secure and efficient way to search for relevant data stored on the cloud while maintaining data privacy through encryption.
+## The idea
 
-## Features
-### Efficient Search: 
-      The method employs advanced algorithms to search for encrypted data efficiently, reducing search time.
-### Keyword Matching: 
-      Utilizes features to match joint keywords, improving the accuracy of search results.
-### Data Privacy:  
-      Encrypts the cloud data to ensure privacy and security, protecting sensitive information from unauthorized access.
-### Scalability:  
-      Designed to scale with large datasets and increasing search demands.
-### User-Friendly Interface: 
-      Intuitive interface for users to interact with the search system easily.
+Encrypted cloud search usually builds one index entry per keyword, which costs storage and slows search down. The paper's method (FMJK) picks random groups of keywords from each data owner's documents to form *joint keywords*, matches each joint keyword against the document and the query to build the index and the search trapdoor, and ranks results with BM25 inner products, returning the top k. The full abstract is in [`docs/abstract.docx`](docs/abstract.docx).
 
+## Application
 
-## Installation
-Clone the repository: git clone https://github.com/your/repository.git
-Install dependencies: pip install -r requirements.txt
-Follow additional setup instructions in the project documentation.
+- Roles: data owner (uploads documents) and data user (searches and requests downloads)
+- Stack: Python 3.10, Django, MySQL (WAMP or XAMPP), HTML, CSS and JavaScript, developed in Visual Studio Code
+- Files are encrypted with Fernet from the Python `cryptography` library
+- The database dump is [`database/filesecure.sql`](database/filesecure.sql) (database name `filesecure`)
 
+The application code is kept as a Word document, [`source/source_code.docx`](source/source_code.docx), not as a runnable Django project.
 
-## Usage
-Configure your cloud storage credentials.
-Upload data to the encrypted cloud storage.
-Use the provided interface or API to search for relevant data using joint keywords.
-Decrypt and access the retrieved data securely.
+## What is in the repo
 
-## Dependencies
-Python 3.x
-Additional dependencies listed in requirements.txt
+```text
+.
+├── docs/
+│   ├── abstract.docx, project_document.pdf, presentation.pptx
+│   ├── software_environment.docx, system_requirements.docx
+│   └── reference/            base paper and journal paper
+├── source/source_code.docx   application code (Django views and models)
+├── database/filesecure.sql   MySQL dump
+└── screenshots/              29 screenshots of the running application
+```
 
-## Contributors
-Dinesh Kumar,
-Naga Lakshmi
+## Team
+
+Dinesh Kumar Gudiputi, Naga Lakshmi
