@@ -1,6 +1,6 @@
 # Efficient Search on Encrypted Cloud Data Using Joint Keywords (FMJK)
 
-B.Tech final-year team project (2023 to 2024): a web application where data owners upload encrypted documents to the cloud and data users search them by keyword, based on the paper "An efficient search method using features to match joint keywords on encrypted cloud data".
+College team project (B.Tech, 2023 to 2024): a web application where data owners upload encrypted documents to the cloud and data users search them by keyword, based on the paper "An efficient search method using features to match joint keywords on encrypted cloud data".
 
 ## The idea
 
@@ -10,7 +10,7 @@ Encrypted cloud search usually builds one index entry per keyword, which costs s
 
 - Roles: data owner (uploads documents) and data user (searches and requests downloads)
 - Stack: Python 3.10, Django, MySQL (WAMP or XAMPP), HTML, CSS and JavaScript, developed in Visual Studio Code
-- Files are encrypted with Fernet from the Python `cryptography` library
+- Encryption uses Fernet from the Python `cryptography` library
 - The database dump is [`database/filesecure.sql`](database/filesecure.sql) (database name `filesecure`)
 
 The application code is kept as a Word document, [`source/source_code.docx`](source/source_code.docx), not as a runnable Django project.
@@ -25,7 +25,7 @@ The application code is kept as a Word document, [`source/source_code.docx`](sou
 │   └── reference/            base paper and journal paper
 ├── source/source_code.docx   application code (Django views and models)
 ├── database/filesecure.sql   MySQL dump
-└── screenshots/              29 screenshots of the running application
+└── screenshots/              27 screenshots of the running application
 ```
 
 ## Team
