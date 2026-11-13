@@ -1,4 +1,12 @@
-# Efficient Search on Encrypted Cloud Data Using Joint Keywords (FMJK)
+<h1 align="center">Efficient Search on Encrypted Cloud Data Using Joint Keywords (FMJK)</h1>
+
+<p align="center"><b>Searchable encryption for cloud documents, ranked with BM25 over joint keywords.</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white" alt="Django">
+  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+</p>
 
 College team project (B.Tech, 2023 to 2024): a web application where data owners upload encrypted documents to the cloud and data users search them by keyword, based on the paper "An efficient search method using features to match joint keywords on encrypted cloud data".
 
